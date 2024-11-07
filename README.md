@@ -1,1 +1,1 @@
-![Demo Video](./app/assets/video.mp4)
+[Demo Video](./app/assest/video.mov)
