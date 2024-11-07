@@ -1,12 +1,11 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import {
   View,
-  Animated,
-  Dimensions,
+  Animated
 } from 'react-native';
-import { scale } from "../../../utils/scale";
 
-const ITEM_WIDTH = scale(280);
+
+const ITEM_WIDTH = 280;
 
 const RenderPaginationDots = ({data,dotHeight,dotWidth,dotViewStyle,dotStyle,scrollX}) =>{
   return(

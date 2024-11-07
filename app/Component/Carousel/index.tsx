@@ -6,12 +6,11 @@ import {
   StyleProp,
   ViewStyle,
 } from 'react-native';
-import { scale } from '../../utils/scale';
 import Close from './components/Close';
 import RenderPaginationDots from  "./components/RenderPaginationDots";
 
 const { width,height } = Dimensions.get('window');
-const ITEM_WIDTH = scale(280);
+const ITEM_WIDTH = 280;
 const ITEM_SPACING = (width - ITEM_WIDTH) / 2;
 
 interface CarouselProps<T> {

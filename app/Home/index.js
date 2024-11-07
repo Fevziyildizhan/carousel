@@ -6,7 +6,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 import Carousel from '../Component/Carousel';
-import { scale } from '../utils/scale';
+
 
 
 function Home() {
@@ -31,21 +31,21 @@ function Home() {
   return (
     <SafeAreaView style={{flex:1,backgroundColor:"white"}}>
       <View style={{flex:1,backgroundColor:"white",}} >
-        <View style={{alignItems:"center",justifyContent:"center",marginTop:scale(50)}} >
+        <View style={{alignItems:"center",justifyContent:"center",marginTop:50}} >
           <TouchableOpacity onPress={()=>setEnable(true)} >
-         <View style={{width:scale(150),height:scale(50),borderRadius:10,backgroundColor:"#cd6155"}} >
+         <View style={{width:150,height:50,borderRadius:10,backgroundColor:"#cd6155"}} >
          </View>
           </TouchableOpacity>
         </View>
         
        <Carousel data={data} 
-       dotEnable={true} 
+       dotEnable={false} 
        carouselEnable={enable} 
        carouselClose={()=>setEnable(false)} 
        renderItem={(item,index)=>{
          return(
           <View style={{}} >
-            <Image key={index} source={{ uri: item.image }} style={{ width: scale(280), height: scale(500) }} />
+            <Image key={index} source={{ uri: item.image }} style={{ width: 280, height: 500 }} />
           </View>
          )
        }} >
